@@ -1,0 +1,11 @@
+from generator import IDGenerator
+users_gen = IDGenerator()
+orders_gen = IDGenerator()
+messages_gen = IDGenerator()
+print(f"User ID: {users_gen.next_id()}")
+print(f"User ID: {users_gen.next_id()}")
+print(f"Order ID: {orders_gen.next_id()}")
+print(f"User ID: {users_gen.next_id()}")
+print(f"Message ID: {messages_gen.next_id()}")
+print(f"Order ID: {orders_gen.next_id()}")
+print(f'Same object: {users_gen is orders_gen is messages_gen }')
